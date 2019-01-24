@@ -72,7 +72,7 @@ func main() {
 	mainLogger.Infof("Proxy version: %s", version.GetVersion())
 
 	// Init configuration
-	config, err := configuration.NewConfiguration()
+	config, err := configuration.New("")
 	if err != nil {
 		logrus.Fatal(err)
 	}
